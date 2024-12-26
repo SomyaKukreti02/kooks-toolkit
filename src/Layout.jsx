@@ -63,7 +63,7 @@ function Layout() {
             Password Generator
           </NavLink>
         </aside>
-        <article className=" flex-1">
+        <article className="overflow-scroll flex-1">
           <Outlet />
         </article>
       </main>
