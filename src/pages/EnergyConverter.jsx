@@ -1,6 +1,7 @@
+import React, { useState } from "react";
 import ConverterBox from "../components/ConverterBox";
-import useConversion from "../hooks/temperature.conversion";
-function Temperature() {
+import useConversion from "../hooks/energy.conversion";
+function Energy() {
   const [
     inputList,
     inputValue,
@@ -13,9 +14,9 @@ function Temperature() {
     handleConvert,
   ] = useConversion();
   return (
-    <main className="flex items-center justify-center h-full">
+    <div className="flex items-center justify-center">
       <ConverterBox
-        title="Temperature"
+        title="Energy"
         inputValue={inputValue}
         setInputValue={setInputValue}
         fromUnit={fromUnit}
@@ -26,8 +27,7 @@ function Temperature() {
         handleConvert={handleConvert}
         inputList={inputList}
       />
-    </main>
+    </div>
   );
 }
-
-export default Temperature;
+export default Energy;

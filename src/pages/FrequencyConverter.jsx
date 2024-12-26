@@ -13,7 +13,7 @@ function Frequency() {
     handleConvert,
   ] = useConversion();
   return (
-    <main className="flex items-center justify-center h-full">
+    <div className="flex items-center justify-center">
       <ConverterBox
         title="Frequency"
         inputValue={inputValue}
@@ -26,7 +26,7 @@ function Frequency() {
         handleConvert={handleConvert}
         inputList={inputList}
       />
-    </main>
+    </div>
   );
 }
 
