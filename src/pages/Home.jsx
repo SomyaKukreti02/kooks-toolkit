@@ -20,7 +20,7 @@ function Home() {
     {
       title: "⚡Energy Converter",
       isNew: false,
-      description: "Convert between Joules, Calories, and Electronvolts.",
+      description: "Convert between Joules and Calories.",
       link: "/energy-converter",
       image: "https://images.pexels.com/photos/414943/pexels-photo-414943.jpeg",
     },
@@ -44,11 +44,11 @@ function Home() {
   return (
     <div className="flex flex-col items-center justify-center space-y-4">
       <h2 className="text-2xl text-white font-semibold">Hola! Welcome 👋</h2>
-      <p className="text-white">
+      <p className="text-white p-4">
         This is a simple toolkit to convert temperature, energy, and frequency
         units. You can also generate random passwords and more.
       </p>
-      <div className="cards grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-4">
+      <div className="cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
         {cards.map((card, index) => (
           <ToolCard key={index} {...card} />
         ))}
