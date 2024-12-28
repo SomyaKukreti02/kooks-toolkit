@@ -13,7 +13,7 @@ function ConverterBox({
   inputList,
 }) {
   return (
-    <div className="border rounded-md p-4 mx-auto bg-gray-800 text-white">
+    <div className="border rounded-md p-4 mx-auto text-white">
       <h1 className="text-3xl mb-4">{title} Converter</h1>
       <div className="my-2">
         <label htmlFor="input-value" className="block mb-1">

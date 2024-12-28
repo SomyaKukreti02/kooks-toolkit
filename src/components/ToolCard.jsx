@@ -1,9 +1,20 @@
 import React from "react";
 import { Link } from "react-router";
 
-function ToolCard({ title = "", description = "", image = "", link = "" }) {
+function ToolCard({
+  title = "",
+  description = "",
+  image = "",
+  link = "",
+  isNew = false,
+}) {
   return (
-    <div className="border rounded-md p-4 text-white">
+    <div className="border rounded-md p-4 text-white relative">
+      {isNew && (
+        <span className="text-amber-500 font-bold absolute bottom-0 right-0 bg-slate-50 px-2 rounded-tl-md">
+          ✨new
+        </span>
+      )}
       <Link to={link}>
         <img
           src={image}

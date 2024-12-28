@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ConverterBox from "../components/ConverterBox";
 import useConversion from "../hooks/energy.conversion";
-function Energy() {
+function EnergyConverter() {
   const [
     inputList,
     inputValue,
@@ -30,4 +30,4 @@ function Energy() {
     </div>
   );
 }
-export default Energy;
+export default EnergyConverter;

@@ -2,16 +2,14 @@ import { NavLink, Outlet, Link } from "react-router";
 
 function Layout() {
   return (
-    <div className=" bg-slate-900 flex flex-col h-screen">
+    <div className=" bg-gradient-to-r from-slate-900 to-slate-700 flex flex-col h-screen">
       <header className="">
         <Link to="/">
-          <h1 className="text-4xl font-bold p-4 text-white">
-            🔧&nbsp; Kook Toolkit
-          </h1>
+          <h1 className="text-4xl font-bold p-4 text-white">Kooks Toolkit</h1>
         </Link>
       </header>
       <main className="overflow-hidden flex">
-        <aside className="hidden lg:block border-r p-4 text-white">
+        <aside className="hidden lg:flex border-r p-4 text-white flex-col gap-2">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -20,7 +18,18 @@ function Layout() {
               }`
             }
           >
-            Home
+            🏠Home
+          </NavLink>
+          <NavLink
+            to="/currency-converter"
+            className={({ isActive }) =>
+              `block px-4 py-2 rounded-md ${
+                isActive ? "bg-gray-700" : "hover:bg-gray-700"
+              }`
+            }
+          >
+            💰Currency Converter
+            <span className="text-amber-500">✨new</span>
           </NavLink>
           <NavLink
             to="/temperature-converter"
@@ -30,7 +39,7 @@ function Layout() {
               }`
             }
           >
-            Temperature Converter
+            🌡️Temperature Converter
           </NavLink>
           <NavLink
             to="/energy-converter"
@@ -40,7 +49,7 @@ function Layout() {
               }`
             }
           >
-            Energy Converter
+            ⚡Energy Converter
           </NavLink>
           <NavLink
             to="/frequency-converter"
@@ -50,8 +59,9 @@ function Layout() {
               }`
             }
           >
-            Frequency Converter
+            〰️Frequency Converter
           </NavLink>
+          <hr />
           <NavLink
             to="/password-generator"
             className={({ isActive }) =>
@@ -60,7 +70,7 @@ function Layout() {
               }`
             }
           >
-            Password Generator
+            🔑Password Generator
           </NavLink>
         </aside>
         <article className="overflow-scroll flex-1">

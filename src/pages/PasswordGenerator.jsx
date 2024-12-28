@@ -34,7 +34,7 @@ function PasswordGenerator() {
 
   return (
     <div className="flex items-center justify-center">
-      <div className=" text-white bg-gray-800 p-4 rounded-md border">
+      <div className=" text-white  p-4 rounded-md border">
         {/* heading */}
         <h1 className=" text-white text-center">password Generator</h1>
         {/* password + copy box */}

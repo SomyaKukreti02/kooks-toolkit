@@ -1,6 +1,6 @@
 import ConverterBox from "../components/ConverterBox";
 import useConversion from "../hooks/temperature.conversion";
-function Temperature() {
+function TemperatureConverter() {
   const [
     inputList,
     inputValue,
@@ -30,4 +30,4 @@ function Temperature() {
   );
 }
 
-export default Temperature;
+export default TemperatureConverter;

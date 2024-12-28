@@ -2,27 +2,39 @@ import ToolCard from "../components/ToolCard";
 function Home() {
   const cards = [
     {
-      title: "Temperature Converter",
+      title: "💰Currency Converter",
+      isNew: true,
+      description: "Convert currency world-wide.",
+      link: "/currency-converter",
+      image:
+        "https://images.pexels.com/photos/29917031/pexels-photo-29917031/free-photo-of-colorful-collection-of-international-stamps-and-coins.jpeg?auto=compress&cs=tinysrgb&w=600",
+    },
+    {
+      title: "🌡️Temperature Converter",
+      isNew: false,
       description: "Convert between Celsius, Fahrenheit, and Kelvin.",
       link: "/temperature-converter",
       image:
         "https://images.pexels.com/photos/3873174/pexels-photo-3873174.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
-      title: "Energy Converter",
+      title: "⚡Energy Converter",
+      isNew: false,
       description: "Convert between Joules, Calories, and Electronvolts.",
       link: "/energy-converter",
       image: "https://images.pexels.com/photos/414943/pexels-photo-414943.jpeg",
     },
     {
-      title: "Frequency Converter",
+      title: "〰️Frequency Converter",
+      isNew: false,
       description: "Convert between Hertz, Kilohertz, and Megahertz.",
       link: "/frequency-converter",
       image:
         "https://images.pexels.com/photos/1093161/pexels-photo-1093161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
-      title: "Password Generator",
+      title: "🔑Password Generator",
+      isNew: false,
       description: "Generate random passwords.",
       link: "/password-generator",
       image:

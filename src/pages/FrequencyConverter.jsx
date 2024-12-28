@@ -1,6 +1,6 @@
 import ConverterBox from "../components/ConverterBox";
 import useConversion from "../hooks/frequency.conversion";
-function Frequency() {
+function FrequencyConverter() {
   const [
     inputList,
     inputValue,
@@ -30,4 +30,4 @@ function Frequency() {
   );
 }
 
-export default Frequency;
+export default FrequencyConverter;

@@ -15,8 +15,8 @@ const useConversion = () => {
       kilocalorie: 0.000239006,
     };
 
-    const inputInJoule = inputValue * conversions[fromUnit];
-    const result = inputInJoule / conversions[toUnit];
+    const inputInJoule = inputValue / conversions[fromUnit];
+    const result = inputInJoule * conversions[toUnit];
     setConvertedValue(result);
   };
 
