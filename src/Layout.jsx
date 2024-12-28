@@ -3,10 +3,10 @@ import { NavLink, Outlet, Link } from "react-router";
 function Layout() {
   return (
     <div className="bg-gradient-to-r from-slate-900 to-slate-700 flex flex-col h-screen">
-      <header className="">
+      <header className="font-[Quintessential]">
         <h1 className="text-4xl font-bold p-4 text-white">
-          <i className="fa-solid fa-bars" />
-          &nbsp;
+          {/* <i className="fa-solid fa-bars" />
+          &nbsp; */}
           <Link to="/">Kooks Toolkit</Link>
         </h1>
       </header>
