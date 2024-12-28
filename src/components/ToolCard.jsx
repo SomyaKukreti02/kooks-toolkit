@@ -21,7 +21,7 @@ function ToolCard({
           alt={title}
           className="mb-4 object-cover w-full overflow-hidden aspect-square rounded-md"
         />
-        <h1 className="text-2xl mb-4">{title}</h1>
+        <h1 className="text-lg mb-4 font-bold">{title}</h1>
         <p>{description}</p>
       </Link>
     </div>

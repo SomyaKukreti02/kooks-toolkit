@@ -30,8 +30,10 @@ function Layout() {
               }`
             }
           >
-            💰Currency Converter
-            <span className="text-amber-500">✨new</span>
+            💰Currency Converter&nbsp;
+            <span className="text-amber-500 font-bold bg-slate-50 px-1 rounded-md">
+              ✨new
+            </span>
           </NavLink>
           <NavLink
             to="/temperature-converter"
